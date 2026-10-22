@@ -1,0 +1,1486 @@
+<!DOCTYPE html><html class="scroll-smooth" lang="en" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Jason Berdisola | Web Developer Portfolio</title>
+<meta name="description" content="Explore the portfolio, skills, experience, and projects of Jason Berdisola, a web developer based in the Philippines.">
+<meta name="theme-color" content="#070709">
+<link href="styles.css" rel="stylesheet">
+<!-- Font Awesome for Tech & UI Icons -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+<!-- Google Font: Plus Jakarta Sans / JetBrains Mono / Space Grotesk -->
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;family=JetBrains+Mono:wght@400;500;600;700&amp;family=Space+Grotesk:wght@500;600;700&amp;display=swap" rel="stylesheet">
+</head>
+<body class="bg-brand-black text-gray-200 antialiased selection:bg-[#f2ca50] selection:text-black relative">
+<!-- BEGIN: Background Watermark Icons & Ambience -->
+<div class="fixed inset-0 pointer-events-none z-0 overflow-hidden" data-purpose="background-ambience">
+<div class="absolute inset-0 radial-center-glow"></div>
+<div class="absolute inset-0 bg-grid-pattern opacity-60"></div>
+<div class="absolute top-20 left-10 text-white/[0.03] text-8xl font-black select-none animate-float-slow">
+<i class="fa-brands fa-react"></i>
+</div>
+<div class="absolute top-1/4 left-1/4 text-white/[0.025] text-9xl select-none animate-float-delay">
+<i class="fa-brands fa-laravel"></i>
+</div>
+<div class="absolute top-1/3 right-1/4 text-white/[0.03] text-8xl select-none">
+<i class="fa-brands fa-js"></i>
+</div>
+<div class="absolute bottom-28 left-16 text-white/[0.03] text-9xl select-none animate-float-slow">
+<i class="fa-brands fa-git-alt"></i>
+</div>
+<div class="absolute bottom-1/4 left-1/3 text-white/[0.025] text-8xl select-none">
+<i class="fa-solid fa-database"></i>
+</div>
+<div class="absolute bottom-20 right-28 text-white/[0.03] text-9xl select-none animate-float-delay">
+<i class="fa-brands fa-html5"></i>
+</div>
+<div class="absolute top-36 right-16 text-white/[0.025] text-8xl select-none">
+<i class="fa-brands fa-css3-alt"></i>
+</div>
+<div class="absolute bottom-1/3 right-1/3 text-white/[0.025] text-8xl select-none">
+<i class="fa-brands fa-bootstrap"></i>
+</div>
+<div class="absolute top-2/3 left-10 text-white/[0.03] text-7xl select-none">
+<i class="fa-solid fa-code"></i>
+</div>
+</div>
+<!-- END: Background Watermark Icons & Ambience -->
+<!-- BEGIN: NavigationBar -->
+<header class="fixed top-0 left-0 right-0 z-50 glass-nav border-b border-white/[0.06] transition-all duration-300" id="main-nav">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+<!-- Logo: JB / JasonBerdisola with scroll to top -->
+<a class="flex items-center gap-3 group focus:outline-none cursor-pointer" data-purpose="brand-logo" href="#home" id="brand-logo-btn" title="Back to top">
+<div class="relative flex items-center justify-center font-black text-2xl tracking-tighter text-white font-mono">
+<span class="text-3xl font-extrabold italic tracking-tighter mr-1 text-white group-hover:text-amber-300 transition-colors">JB</span>
+<span class="text-[10px] tracking-widest uppercase font-sans text-gray-400 absolute -bottom-3 left-0">BerdisolaDev®</span>
+</div>
+</a>
+<!-- Center Desktop Navigation Links with dynamic indicator -->
+<nav class="hidden md:flex items-center space-x-7 text-sm font-medium tracking-wide" data-purpose="desktop-nav-menu" id="desktop-nav-links">
+<a class="nav-item active transition-colors relative py-1 hover:text-white text-white" data-target="home" href="#home">
+  Home
+  <span class="nav-indicator absolute bottom-0 left-0 right-0 h-[2px] bg-white rounded-full opacity-100 transition-all duration-300" style="opacity: 1;"></span>
+</a>
+<a class="nav-item hover:text-white transition-colors relative py-1 text-gray-400" data-target="about" href="#about">
+  About
+  <span class="nav-indicator absolute bottom-0 left-0 right-0 h-[2px] bg-white rounded-full opacity-0 transition-all duration-300" style="opacity: 0;"></span>
+</a>
+<a class="nav-item hover:text-white transition-colors relative py-1 flex items-center gap-1.5 text-gray-400" data-target="skills" href="#skills">
+  Skills
+  <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
+<span class="nav-indicator absolute bottom-0 left-0 right-0 h-[2px] bg-white rounded-full opacity-0 transition-all duration-300" style="opacity: 0;"></span>
+</a>
+<a class="nav-item hover:text-white transition-colors relative py-1 text-gray-400" data-target="experience" href="#experience">
+  Experience
+  <span class="nav-indicator absolute bottom-0 left-0 right-0 h-[2px] bg-white rounded-full opacity-0 transition-all duration-300" style="opacity: 0;"></span>
+</a>
+<a class="nav-item hover:text-white transition-colors relative py-1 text-gray-400" data-target="education" href="#education">
+  Education
+  <span class="nav-indicator absolute bottom-0 left-0 right-0 h-[2px] bg-white rounded-full opacity-0 transition-all duration-300" style="opacity: 0;"></span>
+</a>
+<a class="nav-item hover:text-white transition-colors relative py-1 text-gray-400" data-target="projects" href="#projects">
+  Projects
+  <span class="nav-indicator absolute bottom-0 left-0 right-0 h-[2px] bg-white rounded-full opacity-0 transition-all duration-300" style="opacity: 0;"></span>
+</a>
+</nav>
+<!-- Right Contact Action Button with quick-focus on form -->
+<div class="hidden md:flex items-center gap-4">
+<button class="px-6 py-2 rounded-full border border-white/80 text-sm font-medium text-white hover:bg-white hover:text-black transition-all duration-300 cursor-pointer shadow-sm active:scale-95" id="nav-contact-btn" type="button">
+  Contact
+</button>
+</div>
+<!-- Mobile Hamburger Button -->
+<div class="md:hidden flex items-center">
+<button aria-label="Toggle Navigation Menu" aria-controls="mobile-menu" aria-expanded="false" class="text-gray-300 hover:text-white focus:outline-none p-2 cursor-pointer" id="mobile-menu-btn" type="button">
+<i class="fa-solid fa-bars text-xl" id="mobile-menu-icon"></i>
+</button>
+</div>
+</div>
+<!-- Mobile Dropdown Menu -->
+<div class="hidden md:hidden px-6 pt-3 pb-6 space-y-3 bg-[#0c0d12] border-b border-white/10" id="mobile-menu">
+<a class="block py-2 text-base font-medium text-white border-b border-white/5 mobile-nav-link" href="#home">Home</a>
+<a class="block py-2 text-base font-medium text-gray-400 hover:text-white border-b border-white/5 mobile-nav-link" href="#about">About</a>
+<a class="block py-2 text-base font-medium text-gray-400 hover:text-white border-b border-white/5 mobile-nav-link" href="#skills">Skills</a>
+<a class="block py-2 text-base font-medium text-gray-400 hover:text-white border-b border-white/5 mobile-nav-link" href="#experience">Experience</a>
+<a class="block py-2 text-base font-medium text-gray-400 hover:text-white border-b border-white/5 mobile-nav-link" href="#education">Education</a>
+<a class="block py-2 text-base font-medium text-gray-400 hover:text-white border-b border-white/5 mobile-nav-link" href="#projects">Projects</a>
+<a class="block py-2 text-base font-medium text-amber-300 mobile-nav-link" href="#contact" id="mobile-nav-contact">Contact</a>
+</div>
+</header>
+<!-- END: NavigationBar -->
+<main class="relative z-10">
+<!-- BEGIN: HeroSection -->
+<section class="min-h-screen pt-24 pb-16 flex flex-col justify-center relative overflow-hidden" data-purpose="hero-section" id="home">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full my-auto">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-4 items-center">
+<!-- Left Column: Name & Availability -->
+<div class="lg:col-span-4 flex flex-col justify-center text-left order-2 lg:order-1 z-20">
+<!-- Available Status Pill -->
+<button class="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full border border-white/15 bg-white/[0.03] backdrop-blur-sm w-fit mb-6 text-left hover:border-emerald-400/50 hover:bg-emerald-500/10 transition-all cursor-pointer group active:scale-95 shadow-sm" id="status-pill-btn" title="Click to view availability specs" type="button">
+<span class="w-2.5 h-2.5 rounded-full bg-emerald-500 shadow-[0_0_8px_#10b981] animate-pulse"></span>
+<span class="text-xs font-medium tracking-wide text-gray-300 group-hover:text-emerald-400 transition-colors">Available for work</span>
+</button>
+<!-- Greeting Subtitle -->
+<p class="text-gray-400 text-lg sm:text-xl font-normal tracking-tight mb-2">Hey there! I'm</p>
+<!-- Main Heading with Typewriter -->
+<h1 class="text-4xl sm:text-5xl xl:text-6xl font-extrabold tracking-tight text-white leading-[1.1] mb-5 min-h-[3rem] sm:min-h-[4rem]">
+<span class="" id="hero-name">BSIT</span><span class="cursor-blink font-light text-amber-300">|</span>
+</h1>
+<!-- Tagline -->
+<p class="text-gray-400 text-sm sm:text-base font-normal max-w-sm leading-relaxed mb-6">
+  Crafting digital experiences with clean code and innovative solutions
+</p>
+</div>
+<!-- Center Column: Futuristic Tech Portrait Circle with HUD Rings -->
+<div class="lg:col-span-4 flex justify-center items-center order-1 lg:order-2 my-6 lg:my-0 relative select-none">
+<div class="hero-orbit relative w-72 h-72 sm:w-80 sm:h-80 md:w-96 md:h-96 flex items-center justify-center">
+<!-- Outer Rotating Tech Orbit Ring 1 -->
+<div class="absolute inset-0 rounded-full border border-dashed border-white/15 animate-spin-slow pointer-events-none"></div>
+<!-- Outer Rotating Tech Orbit Ring 2 with notches -->
+<div class="absolute -inset-4 rounded-full border border-white/10 animate-spin-reverse-slow pointer-events-none">
+<span class="absolute top-0 left-1/2 -translate-x-1/2 w-2 h-2 rounded-full bg-amber-400/60 shadow-[0_0_8px_#f2ca50]"></span>
+<span class="absolute bottom-0 left-1/2 -translate-x-1/2 w-2 h-2 rounded-full bg-white/40"></span>
+</div>
+<!-- Ambient Central Glow -->
+<div class="absolute inset-4 rounded-full bg-gradient-to-tr from-white/10 to-transparent blur-2xl animate-pulse-glow pointer-events-none"></div>
+<!-- Circular Masked Developer Portrait Container -->
+<div class="relative w-64 h-64 sm:w-72 sm:h-72 md:w-80 md:h-80 rounded-full overflow-hidden border-2 border-white/20 bg-gradient-to-b from-gray-800/80 via-brand-dark to-black shadow-2xl flex items-center justify-center group cursor-pointer transition-all hover:border-amber-300/80 hover:shadow-[0_0_30px_rgba(242,202,80,0.2)]" id="hero-avatar-trigger" role="button" tabindex="0" title="Click to view Developer Quick Specs &amp; Bio">
+<!-- Jason Berdisola Clean Photo Avatar (No play button overlay) -->
+<img alt="Jason Berdisola - Web Developer" class="w-full h-full object-cover object-top brightness-100 scale-105 group-hover:scale-110 transition-transform duration-700 ease-out" src="https://lh3.googleusercontent.com/aida/AEtjO1XQAps_4m6js5mW_CzrEv3tCUPcxIv0HK7o78WK62WjmQBKQIn-Kaqv3aOAJk3SSF-dC2CNSB_ibBpdeaS-OPpdYlXStd8FBsY7JEt3f6PKItwLg5Q1it-XAmtWN9AB6KNmV0jZParZskI7d9bOCyXuatw8mr87gT-3ggwcY0zF4oIT4yBp06iM1CIQ62yDUetEl8zNYZjhqx4kdP_mHcY246JTqGs1uOSySt_ckiipj2zQb9UbP_mSYrT9">
+<!-- Dark Gradient Overlay -->
+<div class="absolute inset-0 bg-gradient-to-t from-brand-black/60 via-transparent to-black/10 pointer-events-none"></div>
+</div>
+<!-- Orbiting Micro Tech Badges -->
+<button class="absolute -bottom-2 -left-2 bg-brand-card/90 backdrop-blur-md border border-white/10 rounded-xl px-3 py-1.5 text-xs text-gray-300 shadow-xl flex items-center gap-1.5 hover:border-amber-400/50 hover:text-amber-300 transition-all cursor-pointer active:scale-95" id="bsit-badge-btn" title="Click to view Bachelor's Degree info" type="button">
+<i class="fa-solid fa-bolt text-amber-400"></i>
+<span class="font-mono">BSIT Student</span>
+</button>
+</div>
+</div>
+<!-- Right Column: Role Headline, Summary & CTA Buttons -->
+<div class="lg:col-span-4 flex flex-col justify-center text-left order-3 z-20 lg:pl-4">
+<!-- Role Headline with Typewriter -->
+<h2 class="text-3xl sm:text-4xl xl:text-5xl font-bold tracking-tight text-white mb-4 leading-tight min-h-[2.5rem] sm:min-h-[3.25rem]">
+<span class="" id="hero-role">Creative Co</span><span class="cursor-blink font-light text-amber-300">|</span>
+</h2>
+<!-- Educational / Specialization Subtitle -->
+<p class="text-gray-400 text-sm sm:text-base font-normal mb-8 leading-relaxed">
+  Bachelor of Science in Information Technology student with expertise in web development and modern frameworks.
+</p>
+<!-- Action Buttons (View Work & Download CV) -->
+<div class="flex flex-wrap items-center gap-3">
+<a class="px-6 py-3 rounded-xl bg-white text-black font-semibold text-xs tracking-wider uppercase hover:bg-amber-300 hover:text-black transition-all shadow-[0_0_20px_rgba(255,255,255,0.15)] flex items-center gap-2 cursor-pointer active:scale-95" href="#projects" id="hero-view-work-btn">
+<span class="">View My Work</span>
+<i class="fa-solid fa-arrow-right text-[10px]"></i>
+</a>
+<a class="px-6 py-3 rounded-xl border border-white/20 hover:border-amber-400/80 text-white text-xs font-mono uppercase tracking-wider transition-all flex items-center gap-2 cursor-pointer bg-white/[0.02] hover:bg-amber-400/10 active:scale-95 group" href="Jason_Berdisola_CV.html" download="Jason_Berdisola_CV.html">
+<i class="fa-solid fa-download text-xs text-amber-400 group-hover:translate-y-0.5 transition-transform"></i>
+<span>Download CV</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Hero Bottom Scroll Indicator -->
+<div class="mt-12 sm:mt-16 flex flex-col items-center justify-center">
+<a aria-label="Scroll down to About section" class="text-white/60 hover:text-amber-300 transition-colors animate-bounce flex flex-col items-center gap-1 group focus:outline-none cursor-pointer" href="#about" id="hero-scroll-down-btn">
+<span class="text-[11px] font-mono tracking-widest text-gray-500 uppercase group-hover:text-amber-300 transition-colors">Scroll</span>
+<i class="fa-solid fa-arrow-down text-sm"></i>
+</a>
+</div>
+</div>
+</section>
+<!-- END: HeroSection -->
+<!-- BEGIN: AboutSection -->
+<section class="py-24 border-t border-white/[0.06] relative" data-purpose="about-section" id="about">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center max-w-2xl mx-auto mb-16">
+<p class="text-xs font-mono uppercase tracking-widest text-gray-400 mb-2">Introduction</p>
+<h2 class="text-3xl sm:text-4xl font-extrabold text-white">About Me</h2>
+<div class="w-12 h-0.5 bg-amber-400 mx-auto mt-4 rounded-full"></div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+<!-- Bio Narrative -->
+<div class="lg:col-span-7 space-y-6 text-gray-300 text-base sm:text-lg leading-relaxed">
+<p class="text-gray-300 leading-relaxed text-base sm:text-lg">
+  I am an Information Technology Student passionate about transforming ideas into functional software, ranging from interview preparation tools to clinic management systems and service-based platforms. I strive to write clean, maintainable code while creating intuitive and visually appealing interfaces that deliver a smooth user experience.
+</p>
+<!-- Interactive Filter / Philosophy Tags -->
+<div class="pt-4 flex flex-wrap gap-3" id="about-skill-tags">
+<button class="about-tag px-3.5 py-1.5 rounded-full bg-white/[0.05] border border-white/10 text-xs text-gray-300 font-mono hover:border-amber-400 hover:text-amber-300 transition-all cursor-pointer active:scale-95" data-filter="frontend" data-info="Full-Stack Adaptability: Seamlessly switching between modern frontends (React, Tailwind) and robust backends (PHP, MySQL)." type="button">
+  Full-Stack Adaptability
+</button>
+<button class="about-tag px-3.5 py-1.5 rounded-full bg-white/[0.05] border border-white/10 text-xs text-gray-300 font-mono hover:border-amber-400 hover:text-amber-300 transition-all cursor-pointer active:scale-95" data-filter="tools" data-info="Clean Code Principles: Writing modular, well-documented, testable code adhering to DRY and SOLID design patterns." type="button">
+  Clean Code Principles
+</button>
+<button class="about-tag px-3.5 py-1.5 rounded-full bg-white/[0.05] border border-white/10 text-xs text-gray-300 font-mono hover:border-amber-400 hover:text-amber-300 transition-all cursor-pointer active:scale-95" data-filter="frontend" data-info="Responsive Web Design: Mobile-first responsive layouts, accessibility (WCAG), and smooth device transitions." type="button">
+  Responsive Web Design
+</button>
+<button class="about-tag px-3.5 py-1.5 rounded-full bg-white/[0.05] border border-white/10 text-xs text-gray-300 font-mono hover:border-amber-400 hover:text-amber-300 transition-all cursor-pointer active:scale-95" data-filter="all" data-info="Continuous Learner: Always exploring emerging technologies, software architectures, and developer tooling." type="button">
+  Continuous Learner
+</button>
+</div>
+</div>
+<!-- Quick Metrics Cards (Interactive Popover Modal Trigger) -->
+<div class="lg:col-span-5 grid grid-cols-2 gap-4">
+<div class="p-6 rounded-2xl bg-brand-card border border-white/[0.08] hover:border-amber-400/50 hover:-translate-y-1 transition-all group cursor-pointer metric-card shadow-sm" data-metric-badge="Experience" data-metric-desc="Hands-on software development across university coursework, capstone systems, client contracts, and continuous independent study in modern web ecosystems including React, PHP, SQL, and Tailwind CSS." data-metric-icon="fa-solid fa-code" data-metric-title="3+ Years Coding">
+<div class="text-3xl font-bold text-white mb-1 group-hover:scale-105 group-hover:text-amber-300 transition-all inline-block">3+</div>
+<p class="text-xs uppercase font-mono tracking-wider text-gray-400">Years Coding</p>
+<p class="text-xs text-gray-500 mt-2">Academic &amp; practical project development</p>
+</div>
+<div class="p-6 rounded-2xl bg-brand-card border border-white/[0.08] hover:border-amber-400/50 hover:-translate-y-1 transition-all group cursor-pointer metric-card shadow-sm" data-metric-badge="Shipped Work" data-metric-desc="Shipped production-level clinic management platforms (ToothSaver) and high-fidelity portfolio architectures with real-world database design, user authentication, and interactive frontends." data-metric-icon="fa-solid fa-rocket" data-metric-title="2+ Major Projects Built">
+<div class="text-3xl font-bold text-white mb-1 group-hover:scale-105 group-hover:text-amber-300 transition-all inline-block">2+</div>
+<p class="text-xs uppercase font-mono tracking-wider text-gray-400">Projects Built</p>
+<p class="text-xs text-gray-500 mt-2">Web applications, UI designs, and client tools</p>
+</div>
+<div class="p-6 rounded-2xl bg-brand-card border border-white/[0.08] hover:border-amber-400/50 hover:-translate-y-1 transition-all group cursor-pointer metric-card shadow-sm" data-metric-badge="Academic Degree" data-metric-desc="Graduated with a Bachelor of Science in Information Technology with specialized coursework in Full-Stack Web Development, Relational Databases, System Analysis &amp; Architecture." data-metric-icon="fa-solid fa-graduation-cap" data-metric-title="BSIT Graduate">
+<div class="text-3xl font-bold text-white mb-1 group-hover:scale-105 group-hover:text-amber-300 transition-all inline-block">BSIT</div>
+<p class="text-xs uppercase font-mono tracking-wider text-gray-400">Student</p>
+<p class="text-xs text-gray-500 mt-2">Major in Information Technology</p>
+</div>
+<div class="p-6 rounded-2xl bg-brand-card border border-white/[0.08] hover:border-emerald-400/50 hover:-translate-y-1 transition-all group cursor-pointer metric-card shadow-sm" data-metric-badge="Availability" data-metric-desc="Available for full-time junior frontend/fullstack developer roles, contract projects, and remote engineering positions worldwide with immediate start availability." data-metric-icon="fa-solid fa-bolt" data-metric-title="100% Commitment">
+<div class="text-3xl font-bold text-emerald-400 mb-1 group-hover:scale-105 transition-transform inline-block">100%</div>
+<p class="text-xs uppercase font-mono tracking-wider text-gray-400">Dedication</p>
+<p class="text-xs text-gray-500 mt-2">Eager to contribute and grow full-time</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: AboutSection -->
+<!-- BEGIN: SkillsSection -->
+<section class="py-24 bg-brand-dark/50 border-t border-white/[0.06] relative" data-purpose="skills-section" id="skills">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center max-w-2xl mx-auto mb-12">
+<p class="text-xs font-mono uppercase tracking-widest text-gray-400 mb-2">Technical Proficiency</p>
+<h2 class="text-3xl sm:text-4xl font-extrabold text-white">Skills &amp; Technologies</h2>
+<div class="w-12 h-0.5 bg-amber-400 mx-auto mt-4 rounded-full"></div>
+<p class="text-xs text-gray-400 mt-3 font-mono">Click any skill card to view detailed proficiency metrics &amp; experience</p>
+</div>
+<!-- Filter Tabs -->
+<div class="flex justify-center flex-wrap gap-2 mb-12" id="skill-filter-buttons">
+<button class="skill-tab px-5 py-2 rounded-full text-xs font-medium border transition-all cursor-pointer bg-white text-black border-white active" data-filter="all">All Skills</button>
+<button class="skill-tab px-5 py-2 rounded-full text-xs font-medium border hover:border-amber-300 transition-all cursor-pointer text-gray-300 border-white/20" data-filter="frontend">Frontend</button>
+<button class="skill-tab px-5 py-2 rounded-full text-xs font-medium border hover:border-amber-300 transition-all cursor-pointer text-gray-300 border-white/20" data-filter="backend">Backend &amp; DB</button>
+<button class="skill-tab px-5 py-2 rounded-full text-xs font-medium border hover:border-amber-300 transition-all cursor-pointer text-gray-300 border-white/20" data-filter="tools">Tools &amp; DevOps</button>
+</div>
+<!-- Skills Grid Cards -->
+<div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4" id="skills-grid">
+<!-- HTML5 -->
+<div class="skill-card p-5 rounded-xl bg-brand-card border border-white/[0.07] hover:border-amber-400/60 hover:-translate-y-1 transition-all text-center group cursor-pointer" data-category="frontend" data-example="ToothSaver Patient Portal markup with semantic tags &amp; ARIA" data-frameworks="Semantic HTML5, Web Accessibility (a11y), SEO Meta" data-level="92%" data-name="HTML5" data-use="Semantic markup, accessibility standards, SEO structure, and clean DOM trees." data-years="3+ Years" style="opacity: 1; transform: scale(1); display: block;">
+<i class="fa-brands fa-html5 text-4xl text-orange-500 mb-3 block group-hover:scale-110 transition-transform"></i>
+<h3 class="font-semibold text-sm text-white group-hover:text-amber-300 transition-colors">HTML5</h3>
+<span class="text-[11px] text-gray-400 font-mono">Semantic &amp; SEO</span>
+</div>
+<!-- CSS3 -->
+<div class="skill-card p-5 rounded-xl bg-brand-card border border-white/[0.07] hover:border-amber-400/60 hover:-translate-y-1 transition-all text-center group cursor-pointer" data-category="frontend" data-example="Custom CSS grid, fluid typography, and glassmorphism styling" data-frameworks="CSS Grid, Flexbox, Keyframes, Custom Properties" data-level="90%" data-name="CSS3" data-use="Responsive Grid/Flexbox layouts, keyframe animations, pseudo-classes, and variables." data-years="3+ Years" style="opacity: 1; transform: scale(1); display: block;">
+<i class="fa-brands fa-css3-alt text-4xl text-blue-500 mb-3 block group-hover:scale-110 transition-transform"></i>
+<h3 class="font-semibold text-sm text-white group-hover:text-amber-300 transition-colors">CSS3</h3>
+<span class="text-[11px] text-gray-400 font-mono">Flexbox &amp; Grid</span>
+</div>
+<!-- JavaScript -->
+<div class="skill-card p-5 rounded-xl bg-brand-card border border-white/[0.07] hover:border-amber-400/60 hover:-translate-y-1 transition-all text-center group cursor-pointer" data-category="frontend" data-example="Typewriter engine, interactive project modals, and dynamic filtering" data-frameworks="ES6+, Async/Await, Fetch API, DOM Scripting, LocalStorage" data-level="86%" data-name="JavaScript (ES6+)" data-use="Async/Await, DOM manipulation, Fetch API, modular scripts, and event architecture." data-years="2.5+ Years" style="opacity: 1; transform: scale(1); display: block;">
+<i class="fa-brands fa-js text-4xl text-yellow-400 mb-3 block group-hover:scale-110 transition-transform"></i>
+<h3 class="font-semibold text-sm text-white group-hover:text-amber-300 transition-colors">JavaScript</h3>
+<span class="text-[11px] text-gray-400 font-mono">ES6+ &amp; DOM</span>
+</div>
+<!-- Tailwind CSS -->
+<div class="skill-card p-5 rounded-xl bg-brand-card border border-white/[0.07] hover:border-amber-400/60 hover:-translate-y-1 transition-all text-center group cursor-pointer" data-category="frontend" data-example="Full UI design implementation for Developer Portfolio &amp; ToothSaver" data-frameworks="Tailwind v3, Plugins, Custom Theme Config, Dark Mode" data-level="94%" data-name="Tailwind CSS" data-use="Custom configuration, arbitrary utilities, dark mode theming, and responsive layouts." data-years="2+ Years" style="opacity: 1; transform: scale(1); display: block;">
+<i class="fa-solid fa-wind text-4xl text-teal-400 mb-3 block group-hover:scale-110 transition-transform"></i>
+<h3 class="font-semibold text-sm text-white group-hover:text-amber-300 transition-colors">Tailwind CSS</h3>
+<span class="text-[11px] text-gray-400 font-mono">Modern UI</span>
+</div>
+<!-- PHP -->
+<div class="skill-card p-5 rounded-xl bg-brand-card border border-white/[0.07] hover:border-amber-400/60 hover:-translate-y-1 transition-all text-center group cursor-pointer" data-category="backend" data-example="ToothSaver dental patient record endpoints and session manager" data-frameworks="PHP 8+, PDO, OOP, RESTful API Controllers" data-level="78%" data-name="PHP" data-use="Object-Oriented Programming, MVC architecture, session auth, and backend API endpoints." data-years="2+ Years" style="display: block; opacity: 1; transform: scale(1);">
+<i class="fa-brands fa-php text-4xl text-indigo-400 mb-3 block group-hover:scale-110 transition-transform"></i>
+<h3 class="font-semibold text-sm text-white group-hover:text-amber-300 transition-colors">PHP</h3>
+<span class="text-[11px] text-gray-400 font-mono">OOP &amp; API</span>
+</div>
+<!-- Git & GitHub -->
+<div class="skill-card p-5 rounded-xl bg-brand-card border border-white/[0.07] hover:border-amber-400/60 hover:-translate-y-1 transition-all text-center group cursor-pointer" data-category="tools" data-example="Version control and issue management across all GitHub repositories" data-frameworks="Git CLI, GitHub Pages, Branch Merging, Pull Requests" data-level="88%" data-name="Git &amp; GitHub" data-use="Branching workflows, version tracking, pull requests, and collaborative repository management." data-years="3+ Years" style="opacity: 1; transform: scale(1); display: block;">
+<i class="fa-brands fa-git-alt text-4xl text-orange-600 mb-3 block group-hover:scale-110 transition-transform"></i>
+<h3 class="font-semibold text-sm text-white group-hover:text-amber-300 transition-colors">Git &amp; GitHub</h3>
+<span class="text-[11px] text-gray-400 font-mono">Version Control</span>
+</div>
+</div>
+</div>
+</section>
+<!-- END: SkillsSection -->
+<!-- BEGIN: Experience & Education Timeline Section -->
+<section class="py-24 border-t border-white/[0.06] relative" data-purpose="experience-and-education" id="experience">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center max-w-2xl mx-auto mb-16">
+<p class="text-xs font-mono uppercase tracking-widest text-gray-400 mb-2">Qualifications</p>
+<h2 class="text-3xl sm:text-4xl font-extrabold text-white">Experience &amp; Education</h2>
+<div class="w-12 h-0.5 bg-amber-400 mx-auto mt-4 rounded-full"></div>
+<p class="text-xs text-gray-400 mt-3 font-mono">Click cards to expand/collapse extended deliverables and highlights</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+<!-- Experience Column -->
+<div>
+<div class="flex items-center gap-3 mb-8">
+<span class="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center text-amber-300">
+<i class="fa-solid fa-briefcase"></i>
+</span>
+<h3 class="text-2xl font-bold text-white">Experience</h3>
+</div>
+<div class="relative border-l border-white/10 ml-5 pl-8 space-y-10">
+<!-- Item 1: UI/UX Designer -->
+<div aria-expanded="false" class="relative group cursor-pointer timeline-card p-4 rounded-xl bg-white/[0.02] hover:bg-white/[0.05] border border-transparent hover:border-amber-400/30 transition-all select-none" id="exp-card-1" role="button" tabindex="0">
+<div class="absolute -left-[45px] top-6 w-4 h-4 rounded-full border-2 border-brand-black bg-amber-400 group-hover:scale-125 transition-transform shadow-[0_0_8px_#f2ca50]"></div>
+<div class="flex items-center justify-between">
+<span class="text-xs font-mono text-gray-400 bg-white/5 px-2.5 py-1 rounded border border-white/10">2025</span>
+<span class="text-xs text-amber-400 font-mono toggle-hint flex items-center gap-1"><i class="fa-solid fa-chevron-down text-[10px]"></i> <span class="">Expand</span></span>
+</div>
+<h4 class="text-lg font-bold text-white mt-2 group-hover:text-amber-300 transition-colors">UI/UX Designer</h4>
+<p class="text-sm text-gray-400 font-medium">Berdisola Solutions</p>
+<p class="text-sm text-gray-300 mt-2 leading-relaxed">
+  Designed intuitive and visually appealing user interfaces with a focus on user experience, usability, and accessibility. Focused on creating clean layouts, organizing content effectively, and developing user-centered designs.
+</p>
+<!-- Expanded Details -->
+<div class="timeline-expanded hidden mt-4 pt-4 border-t border-white/10 space-y-2 text-xs text-gray-300 font-mono">
+<p class="text-amber-300 font-sans font-semibold text-xs uppercase tracking-wider">Key Deliverables &amp; Responsibilities:</p>
+<ul class="list-disc list-inside space-y-1.5 font-sans text-gray-300 text-xs">
+<li class="">Created high-fidelity Figma design wireframes and component systems for dental clinic workflows.</li>
+<li class="">Conducted user testing sessions, refining UI navigation paths to reduce task completion time by 35%.</li>
+<li class="">Implemented accessible WCAG 2.1 AA color contrast standards and responsive mobile viewports.</li>
+<li class="">Collaborated directly with frontend engineering to convert design tokens smoothly into Tailwind CSS utility classes.</li>
+</ul>
+<div class="pt-2 flex flex-wrap gap-1.5">
+<span class="text-[10px] font-mono bg-white/10 text-amber-300 px-2 py-0.5 rounded">Figma</span>
+<span class="text-[10px] font-mono bg-white/10 text-amber-300 px-2 py-0.5 rounded">Wireframing</span>
+<span class="text-[10px] font-mono bg-white/10 text-amber-300 px-2 py-0.5 rounded">Design Systems</span>
+<span class="text-[10px] font-mono bg-white/10 text-amber-300 px-2 py-0.5 rounded">Tailwind Tokens</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Education Column -->
+<div id="education">
+<div class="flex items-center gap-3 mb-8">
+<span class="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center text-emerald-400">
+<i class="fa-solid fa-graduation-cap"></i>
+</span>
+<h3 class="text-2xl font-bold text-white">Education</h3>
+</div>
+<div class="relative border-l border-white/10 ml-5 pl-8 space-y-10">
+<!-- College -->
+<div aria-expanded="false" class="relative group cursor-pointer timeline-card p-4 rounded-xl bg-white/[0.02] hover:bg-white/[0.05] border border-transparent hover:border-emerald-400/30 transition-all select-none" id="edu-card-1" role="button" tabindex="0">
+<div class="absolute -left-[45px] top-6 w-4 h-4 rounded-full border-2 border-brand-black bg-emerald-400 group-hover:scale-125 transition-transform shadow-[0_0_8px_#10b981]"></div>
+<div class="flex items-center justify-between">
+<span class="text-xs font-mono text-emerald-400 bg-emerald-500/10 px-2.5 py-1 rounded border border-emerald-500/20">2026-2027</span>
+<span class="text-xs text-emerald-400 font-mono toggle-hint flex items-center gap-1"><i class="fa-solid fa-chevron-down text-[10px]"></i> <span class="">Expand</span></span>
+</div>
+<h4 class="text-lg font-bold text-white mt-2 group-hover:text-emerald-300 transition-colors">Bachelor of Science in Information Technology (CEC)</h4>
+<p class="text-sm text-gray-400 font-medium">Undergraduate / Degree Completion</p>
+<p class="text-sm text-gray-300 mt-2 leading-relaxed">
+  Developing comprehensive knowledge and practical skills in software development, web technologies, database management, and system design. Continuously strengthening technical abilities through hands-on project creation.
+</p>
+<!-- Expanded Details -->
+<div class="timeline-expanded hidden mt-4 pt-4 border-t border-white/10 space-y-2 text-xs text-gray-300 font-mono">
+<p class="text-emerald-400 font-sans font-semibold text-xs uppercase tracking-wider">Coursework &amp; Research Focus:</p>
+<ul class="list-disc list-inside space-y-1.5 font-sans text-gray-300 text-xs">
+<li class="">Object-Oriented Programming (PHP, Java, modern ES6+ JavaScript).</li>
+<li class="">Relational Database Management Systems &amp; SQL Query Optimization (MySQL, Normalization, Transactions).</li>
+<li class="">Client-Server Networking, RESTful Web Architecture, and Information Security protocols.</li>
+<li class="">Capstone Project: Lead designer and developer for full-stack clinical management system.</li>
+</ul>
+<div class="pt-2 flex flex-wrap gap-1.5">
+<span class="text-[10px] font-mono bg-white/10 text-emerald-300 px-2 py-0.5 rounded">RDBMS / MySQL</span>
+<span class="text-[10px] font-mono bg-emerald-300/10 text-emerald-300 px-2 py-0.5 rounded">OOP / Software Eng</span>
+<span class="text-[10px] font-mono bg-white/10 text-emerald-300 px-2 py-0.5 rounded">Web Architecture</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: Experience & Education Timeline Section -->
+<!-- BEGIN: ProjectsSection -->
+<section class="py-24 bg-brand-dark/30 border-t border-white/[0.06] relative" data-purpose="projects-showcase" id="projects">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+<div>
+<p class="text-xs font-mono uppercase tracking-widest text-gray-400 mb-2">Featured Creations</p>
+<h2 class="text-3xl sm:text-4xl font-extrabold text-white">Recent Work &amp; Projects</h2>
+<div class="w-12 h-0.5 bg-amber-400 mt-4 rounded-full"></div>
+</div>
+<button class="inline-flex items-center gap-2 text-sm text-gray-300 hover:text-amber-300 transition-colors group cursor-pointer focus:outline-none" id="explore-github-link" type="button">
+<span class="">Explore full GitHub repository</span>
+<i class="fa-solid fa-arrow-right text-xs group-hover:translate-x-1 transition-transform"></i>
+</button>
+</div>
+<!-- Project Cards Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 max-w-4xl mx-auto">
+<!-- Project 1: ToothSaver -->
+<div aria-label="ToothSaver project" class="rounded-2xl bg-brand-card border border-white/[0.08] overflow-hidden hover:border-amber-400/40 transition-all flex flex-col group cursor-pointer project-card-interactive shadow-lg" data-project-id="1" role="group">
+<div class="h-52 bg-gradient-to-br from-neutral-800 to-neutral-900 relative overflow-hidden flex items-center justify-center p-6 border-b border-white/10 group-hover:scale-[1.02] transition-transform duration-500">
+<div class="w-20 h-20 rounded-2xl bg-white/10 flex items-center justify-center text-4xl text-amber-300 group-hover:scale-110 transition-transform">
+<i class="fa-solid fa-tooth"></i>
+</div>
+<span class="absolute top-3 right-3 px-2 py-0.5 rounded text-[10px] font-mono uppercase bg-white/10 text-white border border-white/20">Full Stack</span>
+<span class="absolute bottom-3 left-3 text-[11px] font-mono text-gray-300 bg-black/60 px-2.5 py-1 rounded backdrop-blur-sm group-hover:text-amber-300 transition-colors"><i class="fa-regular fa-eye mr-1"></i> Click to view details</span>
+</div>
+<div class="p-6 flex-1 flex flex-col justify-between">
+<div>
+<h3 class="text-xl font-bold text-white mb-2 group-hover:text-amber-300 transition-colors">ToothSaver</h3>
+<p class="text-sm text-gray-400 mb-4 leading-relaxed">
+  A web-based dental clinic management system designed to organize patient records, manage appointments, and streamline daily clinic operations through a user-friendly and efficient platform.
+</p>
+<div class="flex flex-wrap gap-2 mb-6">
+<span class="text-xs font-mono text-gray-300 bg-white/5 px-2 py-1 rounded border border-white/5">React</span>
+<span class="text-xs font-mono text-gray-300 bg-white/5 px-2 py-1 rounded border border-white/5">Tailwind CSS</span>
+<span class="text-xs font-mono text-gray-300 bg-white/5 px-2 py-1 rounded border border-white/5">REST API</span>
+<span class="text-xs font-mono text-gray-300 bg-white/5 px-2 py-1 rounded border border-white/5">MySQL</span>
+</div>
+</div>
+<div class="flex items-center gap-3 pt-4 border-t border-white/5">
+<button class="flex-1 text-center py-2 px-3 rounded-lg bg-white text-black font-semibold text-xs hover:bg-amber-300 transition-colors btn-live-preview cursor-pointer active:scale-95" data-project-id="1" type="button">
+  Case Study
+</button>
+<button class="p-2 px-3 rounded-lg border border-white/20 hover:border-amber-400 text-white text-xs transition-colors flex items-center gap-1.5 btn-code-view cursor-pointer active:scale-95 group/code" data-repo="ToothSaver" type="button">
+<i class="fa-brands fa-github group-hover/code:text-amber-300"></i>
+<span class="">Code</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Project 2: Jason Berdisola Minimalist Portfolio -->
+<div aria-label="Jason Berdisola portfolio project" class="rounded-2xl bg-brand-card border border-white/[0.08] overflow-hidden hover:border-amber-400/40 transition-all flex flex-col group cursor-pointer project-card-interactive shadow-lg" data-project-id="3" role="group">
+<div class="h-52 bg-gradient-to-br from-neutral-800 to-neutral-900 relative overflow-hidden flex items-center justify-center p-6 border-b border-white/10 group-hover:scale-[1.02] transition-transform duration-500">
+<div class="w-20 h-20 rounded-2xl bg-white/10 flex items-center justify-center text-4xl text-amber-300 group-hover:scale-110 transition-transform">
+<i class="fa-solid fa-laptop-code"></i>
+</div>
+<span class="absolute top-3 right-3 px-2 py-0.5 rounded text-[10px] font-mono uppercase bg-white/10 text-white border border-white/20">Portfolio</span>
+<span class="absolute bottom-3 left-3 text-[11px] font-mono text-gray-300 bg-black/60 px-2.5 py-1 rounded backdrop-blur-sm group-hover:text-amber-300 transition-colors"><i class="fa-regular fa-eye mr-1"></i> Click to view details</span>
+</div>
+<div class="p-6 flex-1 flex flex-col justify-between">
+<div>
+<h3 class="text-xl font-bold text-white mb-2 group-hover:text-amber-300 transition-colors">Jason Berdisola Minimalist Portfolio</h3>
+<p class="text-sm text-gray-400 mb-4 leading-relaxed">
+  Interactive developer showcase with custom typewriter script, interactive HUD portrait aura, responsive timeline drawer, and integrated contact pipeline.
+</p>
+<div class="flex flex-wrap gap-2 mb-6">
+<span class="text-xs font-mono text-gray-300 bg-white/5 px-2 py-1 rounded border border-white/5">Tailwind CSS</span>
+<span class="text-xs font-mono text-gray-300 bg-white/5 px-2 py-1 rounded border border-white/5">HTML5</span>
+<span class="text-xs font-mono text-gray-300 bg-white/5 px-2 py-1 rounded border border-white/5">JavaScript</span>
+<span class="text-xs font-mono text-gray-300 bg-white/5 px-2 py-1 rounded border border-white/5">HUD UI</span>
+</div>
+</div>
+<div class="flex items-center gap-3 pt-4 border-t border-white/5">
+<button class="flex-1 text-center py-2 px-3 rounded-lg bg-white text-black font-semibold text-xs hover:bg-amber-300 transition-colors btn-live-preview cursor-pointer active:scale-95" data-project-id="3" type="button">
+  Case Study
+</button>
+<button class="p-2 px-3 rounded-lg border border-white/20 hover:border-amber-400 text-white text-xs transition-colors flex items-center gap-1.5 btn-code-view cursor-pointer active:scale-95 group/code" data-repo="jason-portfolio" type="button">
+<i class="fa-brands fa-github group-hover/code:text-amber-300"></i>
+<span class="">Code</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: ProjectsSection -->
+<!-- BEGIN: ContactSection -->
+<section class="py-24 border-t border-white/[0.06] relative" data-purpose="contact-section" id="contact">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center max-w-2xl mx-auto mb-16">
+<p class="text-xs font-mono uppercase tracking-widest text-gray-400 mb-2">Get In Touch</p>
+<h2 class="text-3xl sm:text-4xl font-extrabold text-white">Let's Work Together</h2>
+<div class="w-12 h-0.5 bg-amber-400 mx-auto mt-4 rounded-full"></div>
+<p class="text-gray-400 text-sm sm:text-base mt-4">
+  Have a project in mind, an open developer position, or just want to connect? Send a message below.
+</p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+<!-- Contact Details / Info Cards -->
+<div class="lg:col-span-5 space-y-6">
+<div aria-label="Email contact details" class="p-6 rounded-2xl bg-brand-card border border-white/[0.08] flex items-start gap-4 hover:border-amber-400/50 transition-all cursor-pointer group shadow-sm active:scale-[0.99]" id="contact-email-card" role="group" title="Click to copy email">
+<div class="w-12 h-12 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-white text-xl shrink-0 group-hover:bg-amber-400/20 group-hover:text-amber-300 transition-colors">
+<i class="fa-regular fa-envelope"></i>
+</div>
+<div class="flex-1 min-w-0">
+<p class="text-xs font-mono uppercase text-gray-400">Direct Email</p>
+<p class="text-white group-hover:underline text-sm sm:text-base font-medium break-all">
+  berdisolajason6@gmail.com
+</p>
+<button class="mt-2 text-xs text-amber-300 hover:text-white flex items-center gap-1.5 focus:outline-none cursor-pointer transition-colors" id="copy-email-btn" type="button">
+<i class="fa-regular fa-copy"></i>
+<span class="" id="copy-text">Click to copy email address</span>
+</button>
+</div>
+</div>
+<div aria-label="Location: Philippines; available for remote and on-site work" class="p-6 rounded-2xl bg-brand-card border border-white/[0.08] flex items-start gap-4 hover:border-emerald-400/50 transition-all cursor-pointer group shadow-sm active:scale-[0.99]" id="contact-location-card" role="button" tabindex="0" title="Click for location status">
+<div class="w-12 h-12 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-white text-xl shrink-0 group-hover:bg-emerald-400/20 group-hover:text-emerald-300 transition-colors">
+<i class="fa-solid fa-location-dot"></i>
+</div>
+<div>
+<p class="text-xs font-mono uppercase text-gray-400">Location</p>
+<p class="text-white text-base font-medium">Philippines</p>
+<p class="text-xs text-gray-500 mt-0.5">Open to Remote &amp; On-Site opportunities worldwide</p>
+</div>
+</div>
+<div class="p-6 rounded-2xl bg-brand-card border border-white/[0.08]">
+<p class="text-xs font-mono uppercase text-gray-400 mb-3">Professional Profiles</p>
+<div class="flex items-center gap-3">
+<a class="px-4 py-2 rounded-lg bg-white/5 hover:bg-white/10 border border-white/10 hover:border-amber-400/40 text-white text-xs font-mono flex items-center gap-2 transition-all cursor-pointer active:scale-95" href="https://github.com/jasonberdisola" id="contact-github-link" rel="noopener noreferrer" target="_blank">
+<i class="fa-brands fa-github text-base text-amber-300"></i>
+<span>GitHub Profile</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Contact Form -->
+<div class="lg:col-span-7">
+<div class="p-8 rounded-2xl bg-brand-card border border-white/[0.08] relative">
+<form class="space-y-5" id="contact-form" novalidate="">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+<div>
+<label class="block text-xs font-mono uppercase text-gray-400 mb-2" for="contact-name">Your Name</label>
+<input class="w-full px-4 py-3 rounded-lg bg-brand-black border border-white/15 text-white placeholder-gray-600 focus:outline-none focus:border-amber-400 focus:ring-1 focus:ring-amber-400 text-sm transition-colors" id="contact-name" placeholder="e.g. Jane Doe" required="" type="text">
+</div>
+<div>
+<label class="block text-xs font-mono uppercase text-gray-400 mb-2" for="contact-email">Your Email</label>
+<input class="w-full px-4 py-3 rounded-lg bg-brand-black border border-white/15 text-white placeholder-gray-600 focus:outline-none focus:border-amber-400 focus:ring-1 focus:ring-amber-400 text-sm transition-colors" id="contact-email" placeholder="e.g. jane@example.com" required="" type="email">
+</div>
+</div>
+<div>
+<label class="block text-xs font-mono uppercase text-gray-400 mb-2" for="contact-subject">Subject</label>
+<input class="w-full px-4 py-3 rounded-lg bg-brand-black border border-white/15 text-white placeholder-gray-600 focus:outline-none focus:border-amber-400 focus:ring-1 focus:ring-amber-400 text-sm transition-colors" id="contact-subject" placeholder="Job opportunity, collaboration, or question" required="" type="text">
+</div>
+<div>
+<label class="block text-xs font-mono uppercase text-gray-400 mb-2" for="contact-message">Message</label>
+<textarea class="w-full px-4 py-3 rounded-lg bg-brand-black border border-white/15 text-white placeholder-gray-600 focus:outline-none focus:border-amber-400 focus:ring-1 focus:ring-amber-400 text-sm transition-colors resize-none" id="contact-message" placeholder="Tell me about your project or role..." required="" rows="4"></textarea>
+</div>
+<button class="w-full py-3.5 px-6 rounded-lg bg-white text-black font-bold text-sm hover:bg-amber-300 transition-all shadow-[0_0_20px_rgba(255,255,255,0.1)] flex items-center justify-center gap-2 cursor-pointer active:scale-98" id="contact-submit-btn" type="submit">
+<i class="fa-solid fa-paper-plane text-xs"></i>
+<span class="">Send Message</span>
+</button>
+</form>
+<!-- Feedback Banner Alert -->
+<div class="hidden mt-4 p-4 rounded-lg bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-sm flex items-center gap-2" id="contact-success-msg">
+<i class="fa-solid fa-circle-check"></i>
+<span class="">Thank you! Your message has been received. Jason will get back to you within 24 hours.</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: ContactSection -->
+</main>
+<!-- BEGIN: MainFooter -->
+<footer class="py-10 border-t border-white/[0.08] relative z-10 bg-brand-black" data-purpose="site-footer">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-mono text-gray-500">
+<!-- Brand Copyright -->
+<div class="flex items-center gap-2">
+<span class="font-bold text-white tracking-wider">JB / BerdisolaDev</span>
+<span class="">© <span class="" id="current-year">2026</span> Jason Berdisola. All rights reserved.</span>
+</div>
+<!-- Quick Back to Top -->
+<div class="flex items-center gap-4">
+<span class="">Designed &amp; Engineered by Jason Berdisola</span>
+<button aria-label="Back to top" class="text-gray-400 hover:text-amber-300 transition-colors p-2 cursor-pointer focus:outline-none" id="back-to-top-btn" title="Back to top" type="button">
+<i class="fa-solid fa-arrow-up"></i>
+</button>
+</div>
+</div>
+</footer>
+<!-- END: MainFooter -->
+<!-- Floating Back to Top Button (Appears on Scroll) -->
+<button aria-label="Scroll to top" class="fixed bottom-6 left-6 z-40 w-11 h-11 rounded-full bg-brand-card/90 border border-white/20 text-white flex items-center justify-center shadow-2xl backdrop-blur-md opacity-0 pointer-events-none hover:bg-amber-300 hover:text-black hover:border-amber-300 transition-all duration-300 cursor-pointer" id="floating-back-to-top" type="button">
+<i class="fa-solid fa-arrow-up text-sm"></i>
+</button>
+<!-- BEGIN: Profile Detail Modal (Developer Quick Specs) -->
+<div aria-labelledby="profile-modal-title" aria-modal="true" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-md transition-opacity duration-300 opacity-0 pointer-events-none" id="profile-modal" role="dialog">
+<div class="bg-brand-card border border-white/20 rounded-2xl max-w-md w-full p-6 relative shadow-2xl transform transition-transform duration-300 scale-95" id="profile-modal-content">
+<button aria-label="Close modal" class="absolute top-4 right-4 text-gray-400 hover:text-white text-xl p-1 focus:outline-none cursor-pointer" id="close-profile-modal" type="button">
+<i class="fa-solid fa-xmark"></i>
+</button>
+<div class="flex items-center gap-4 mb-5">
+<div class="w-16 h-16 rounded-full overflow-hidden border-2 border-amber-300/80 shrink-0 shadow-lg">
+<img alt="Jason Berdisola" class="w-full h-full object-cover object-top" src="https://lh3.googleusercontent.com/aida/AEtjO1XQAps_4m6js5mW_CzrEv3tCUPcxIv0HK7o78WK62WjmQBKQIn-Kaqv3aOAJk3SSF-dC2CNSB_ibBpdeaS-OPpdYlXStd8FBsY7JEt3f6PKItwLg5Q1it-XAmtWN9AB6KNmV0jZParZskI7d9bOCyXuatw8mr87gT-3ggwcY0zF4oIT4yBp06iM1CIQ62yDUetEl8zNYZjhqx4kdP_mHcY246JTqGs1uOSySt_ckiipj2zQb9UbP_mSYrT9">
+</div>
+<div>
+<h3 class="text-xl font-bold text-white" id="profile-modal-title">Jason Berdisola</h3>
+<p class="text-xs font-mono text-emerald-400">BSIT Student &amp; Web Developer</p>
+<p class="text-xs text-gray-400 mt-0.5">Philippines • Open for Remote Work</p>
+</div>
+</div>
+<p class="text-sm text-gray-300 leading-relaxed mb-4">
+  Enthusiastic and versatile software craftsman specializing in building high-performance web applications using modern technologies like Javascript, Tailwind CSS, PHP, and&nbsp; Git &amp; Github.
+</p>
+<div class="grid grid-cols-2 gap-2 text-xs font-mono mb-5">
+<div class="bg-white/5 p-2.5 rounded-lg border border-white/5">
+<span class="text-gray-400 block text-[10px]">CURRENT FOCUS</span>
+<span class="text-white font-semibold">Full Stack Dev</span>
+</div>
+<div class="bg-white/5 p-2.5 rounded-lg border border-white/5">
+<span class="text-gray-400 block text-[10px]">AVAILABILITY</span>
+<span class="text-emerald-400 font-semibold">Open to Opportunities</span>
+</div>
+</div>
+<div class="flex gap-2">
+<button class="flex-1 py-2 text-center text-xs font-semibold bg-white text-black rounded-lg hover:bg-amber-300 transition-colors cursor-pointer" id="modal-contact-link" type="button">
+  Connect With Me
+</button>
+<a class="px-4 py-2 text-xs font-semibold border border-white/30 text-white rounded-lg hover:bg-white/10 transition-colors flex items-center justify-center cursor-pointer" href="https://github.com/jasonberdisola" id="modal-github-shortcut" rel="noopener noreferrer" target="_blank">
+<i class="fa-brands fa-github mr-1 text-amber-300"></i> GitHub
+</a>
+</div>
+</div>
+</div>
+<!-- END: Profile Detail Modal -->
+<!-- BEGIN: Skill / Metric Detail Modal -->
+<div aria-labelledby="spec-modal-title" aria-modal="true" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-md transition-opacity duration-300 opacity-0 pointer-events-none" id="spec-modal" role="dialog">
+<div class="bg-brand-card border border-white/20 rounded-2xl max-w-sm w-full p-6 relative shadow-2xl transform transition-transform duration-300 scale-95" id="spec-modal-content">
+<button aria-label="Close spec modal" class="absolute top-4 right-4 text-gray-400 hover:text-white text-xl p-1 focus:outline-none cursor-pointer" id="close-spec-modal" type="button">
+<i class="fa-solid fa-xmark"></i>
+</button>
+<div class="w-12 h-12 rounded-xl bg-amber-400/10 border border-amber-400/20 text-amber-300 flex items-center justify-center text-xl mb-4" id="spec-modal-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+<h3 class="text-xl font-bold text-white mb-1" id="spec-modal-title">BSIT Student</h3>
+<p class="text-xs font-mono text-emerald-400 mb-3" id="spec-modal-subtitle">Category: Pursuing College</p>
+<p class="text-sm text-gray-300 leading-relaxed mb-4" id="spec-modal-body">Pursuing&nbsp; with a Bachelor of Science in Information Technology with specialized coursework in Full-Stack Web Development, Relational Databases, System Analysis &amp; Architecture.</p>
+<div class="bg-white/5 border border-white/10 rounded-lg p-3 mb-5 hidden" id="spec-modal-extra">
+<span class="text-[10px] font-mono text-amber-300 uppercase tracking-wider block mb-1">Key Tooling &amp; Project Example:</span>
+<p class="text-xs text-gray-300 font-mono" id="spec-modal-example"></p>
+</div>
+<button class="w-full py-2.5 rounded-lg bg-white/10 hover:bg-amber-300 hover:text-black text-white text-xs font-mono uppercase tracking-wider transition-all cursor-pointer font-semibold" id="spec-modal-action" type="button">
+  Understood
+</button>
+</div>
+</div>
+<!-- END: Skill / Metric Detail Modal -->
+<!-- BEGIN: Project Case Study Preview Modal -->
+<div aria-labelledby="modal-project-title" aria-modal="true" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/85 backdrop-blur-md transition-opacity duration-300 opacity-0 pointer-events-none" id="project-modal" role="dialog">
+<div class="bg-brand-card border border-white/20 rounded-2xl max-w-2xl w-full p-6 sm:p-8 relative shadow-2xl transform transition-transform duration-300 max-h-[90vh] overflow-y-auto scale-95" id="project-modal-content">
+<button aria-label="Close project modal" class="absolute top-5 right-5 text-gray-400 hover:text-white text-xl p-1 focus:outline-none cursor-pointer" id="close-project-modal" type="button">
+<i class="fa-solid fa-xmark"></i>
+</button>
+<div class="flex items-center gap-2 mb-3">
+<span class="px-2.5 py-0.5 rounded text-[10px] font-mono uppercase bg-white/10 text-white border border-white/20" id="modal-project-badge">Full Stack</span>
+<span class="text-xs text-gray-400 font-mono">Case Study &amp; Architecture</span>
+</div>
+<h3 class="text-2xl font-bold text-white mb-2" id="modal-project-title">ToothSaver - Dental Clinic Management</h3>
+<p class="text-sm text-gray-300 leading-relaxed mb-6" id="modal-project-desc">A web-based dental clinic management system designed to organize patient records, manage appointments, and streamline daily clinic operations through a user-friendly and efficient platform.</p>
+<!-- Mock Preview Container -->
+<div class="mb-6 rounded-xl bg-neutral-900 border border-white/10 p-5 relative overflow-hidden" id="modal-project-preview-box">
+<div class="flex items-center justify-between pb-3 mb-3 border-b border-white/10 text-xs font-mono text-gray-400">
+<span class="flex items-center gap-1.5"><span class="w-2.5 h-2.5 rounded-full bg-red-500 inline-block"></span><span class="w-2.5 h-2.5 rounded-full bg-yellow-500 inline-block"></span><span class="w-2.5 h-2.5 rounded-full bg-emerald-500 inline-block"></span> system://preview-environment</span>
+<span class="text-emerald-400 flex items-center gap-1.5"><i class="fa-brands fa-github"></i> <span>GitHub Repository</span></span>
+</div>
+<div class="py-4 px-3 bg-black/40 rounded-lg border border-white/5 text-center">
+<p class="text-sm text-amber-300 font-semibold mb-1" id="modal-preview-heading">Interactive Sandbox Ready</p>
+<p class="text-xs text-gray-400 font-mono" id="modal-project-preview-text">Interactive sandbox loaded for ToothSaver. All API endpoints active.</p>
+</div>
+</div>
+<div class="mb-6 rounded-xl bg-white/5 border border-white/10 p-5">
+<h4 class="text-xs font-mono uppercase text-gray-400 tracking-wider mb-3">Key Features &amp; Technical Highlights</h4>
+<ul class="text-xs sm:text-sm text-gray-300 space-y-2 list-disc list-inside" id="modal-project-features">
+<li class="">Digital patient intake and medical history tracking with encrypted storage.</li>
+<li class="">Interactive appointment calendar with automated conflict prevention.</li>
+<li class="">Custom billing system creating printable itemized treatment receipts.</li>
+<li class="">Tailwind CSS responsive design optimized for front-desk desktop and tablet views.</li>
+</ul>
+</div>
+<div class="mb-6">
+<h4 class="text-xs font-mono uppercase text-gray-400 tracking-wider mb-2">Technology Stack</h4>
+<div class="flex flex-wrap gap-2" id="modal-project-tags">
+<span class="text-xs font-mono text-gray-300 bg-white/10 px-2.5 py-1 rounded">React</span>
+<span class="text-xs font-mono text-gray-300 bg-white/10 px-2.5 py-1 rounded">Tailwind CSS</span>
+<span class="text-xs font-mono text-gray-300 bg-white/10 px-2.5 py-1 rounded">REST API</span>
+<span class="text-xs font-mono text-gray-300 bg-white/10 px-2.5 py-1 rounded">MySQL</span>
+</div>
+</div>
+<div class="flex flex-col sm:flex-row items-stretch gap-3 pt-4 border-t border-white/10">
+<button class="flex-1 text-center py-2.5 px-4 rounded-lg bg-white text-black font-semibold text-xs hover:bg-amber-300 transition-colors cursor-pointer active:scale-95" id="modal-project-live-btn" type="button">
+  Open GitHub Repository
+</button>
+<button class="p-2.5 px-4 rounded-lg border border-white/30 hover:border-amber-400 text-white text-xs transition-colors flex items-center justify-center gap-1.5 cursor-pointer active:scale-95" id="modal-project-repo-btn" type="button">
+<i class="fa-brands fa-github text-sm text-amber-300"></i>
+<span class="">Copy Repository Link</span>
+</button>
+</div>
+</div>
+</div>
+<!-- END: Project Case Study Preview Modal -->
+<!-- BEGIN: Contact Success Confirmation Modal -->
+<div aria-labelledby="contact-modal-title" aria-modal="true" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/85 backdrop-blur-md transition-opacity duration-300 opacity-0 pointer-events-none" id="contact-modal" role="dialog">
+<div class="bg-brand-card border border-white/20 rounded-2xl max-w-md w-full p-7 relative shadow-2xl transform transition-transform duration-300 scale-95 text-center" id="contact-modal-content">
+<button aria-label="Close confirmation modal" class="absolute top-4 right-4 text-gray-400 hover:text-white text-xl p-1 focus:outline-none cursor-pointer" id="close-contact-modal" type="button">
+<i class="fa-solid fa-xmark"></i>
+</button>
+<div class="w-16 h-16 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 flex items-center justify-center text-3xl mx-auto mb-4 shadow-[0_0_20px_rgba(16,185,129,0.2)]">
+<i class="fa-solid fa-paper-plane"></i>
+</div>
+<h3 class="text-2xl font-bold text-white mb-2" id="contact-modal-title">Email Draft Ready</h3>
+<p class="text-sm text-gray-300 leading-relaxed mb-5" id="contact-modal-thankyou">
+  Your email app should open with your message ready. Please send the draft there to complete delivery.
+</p>
+<div class="bg-white/5 border border-white/10 rounded-xl p-4 text-left text-xs font-mono space-y-1.5 mb-6">
+<div class="text-gray-400">Sender: <span class="text-white" id="modal-confirm-name">User</span></div>
+<div class="text-gray-400">Email: <span class="text-emerald-400" id="modal-confirm-email">user@domain.com</span></div>
+<div class="text-gray-400">Subject: <span class="text-amber-300" id="modal-confirm-subject">Inquiry</span></div>
+</div>
+<button class="w-full py-3 rounded-lg bg-white text-black font-bold text-xs uppercase tracking-wider hover:bg-amber-300 transition-colors cursor-pointer" id="contact-modal-done-btn" type="button">
+  Done
+</button>
+</div>
+</div>
+<!-- END: Contact Success Confirmation Modal -->
+<!-- BEGIN: Interactive Toast Notification -->
+<div class="fixed bottom-6 right-6 z-50 transform transition-all duration-300 translate-y-20 opacity-0 pointer-events-none" id="toast">
+<div class="bg-brand-card text-white px-5 py-3.5 rounded-xl shadow-2xl flex items-center gap-3 text-sm font-medium border border-white/20 backdrop-blur-md">
+<i class="fa-solid fa-lightbulb text-amber-300" id="toast-icon"></i>
+<span class="font-mono text-xs sm:text-sm text-gray-200" id="toast-text">Clean Code Principles: Writing modular, well-documented, testable code adhering to DRY and SOLID design patterns.</span>
+</div>
+</div>
+<!-- END: Interactive Toast Notification -->
+<!-- BEGIN: Comprehensive Interactive JavaScript -->
+<script data-purpose="interactive-functionality">
+document.addEventListener('DOMContentLoaded', () => {
+  // 1. Current Year
+  const yearEl = document.getElementById('current-year');
+  if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+  // Toast Functionality
+  const toast = document.getElementById('toast');
+  const toastText = document.getElementById('toast-text');
+  const toastIcon = document.getElementById('toast-icon');
+  let toastTimer;
+
+  function showToast(message, iconClass = 'fa-solid fa-circle-check text-emerald-400') {
+    if (!toast) return;
+    clearTimeout(toastTimer);
+    toastText.textContent = message;
+    toastIcon.className = iconClass;
+    toast.classList.remove('translate-y-20', 'opacity-0', 'pointer-events-none');
+    toast.classList.add('translate-y-0', 'opacity-100');
+
+    toastTimer = setTimeout(() => {
+      toast.classList.remove('translate-y-0', 'opacity-100');
+      toast.classList.add('translate-y-20', 'opacity-0', 'pointer-events-none');
+    }, 3800);
+  }
+
+  // Helper smooth scroll with offset for sticky navbar
+  function smoothScrollTo(elementId) {
+    const el = document.getElementById(elementId);
+    if (!el) return;
+    const navHeight = 80;
+    const topOffset = el.getBoundingClientRect().top + window.pageYOffset - navHeight;
+    window.scrollTo({
+      top: topOffset > 0 ? topOffset : 0,
+      behavior: 'smooth'
+    });
+  }
+
+  // 2. Navigation bar interactions
+  const brandLogoBtn = document.getElementById('brand-logo-btn');
+  if (brandLogoBtn) {
+    brandLogoBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      showToast('Back to top', 'fa-solid fa-arrow-up text-amber-300');
+    });
+  }
+
+  // Navigation Links click handler
+  const desktopLinks = document.querySelectorAll('#desktop-nav-links .nav-item');
+  desktopLinks.forEach(link => {
+    link.addEventListener('click', (e) => {
+      e.preventDefault();
+      const target = link.getAttribute('data-target');
+      if (target) {
+        smoothScrollTo(target);
+      }
+    });
+  });
+
+  // Contact button in top right
+  const navContactBtn = document.getElementById('nav-contact-btn');
+  if (navContactBtn) {
+    navContactBtn.addEventListener('click', () => {
+      smoothScrollTo('contact');
+      setTimeout(() => {
+        const nameInput = document.getElementById('contact-name');
+        if (nameInput) nameInput.focus();
+      }, 500);
+    });
+  }
+
+  // Mobile menu links
+  const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+  const mobileMenu = document.getElementById('mobile-menu');
+  const mobileMenuIcon = document.getElementById('mobile-menu-icon');
+  if (mobileMenuBtn && mobileMenu) {
+    mobileMenuBtn.addEventListener('click', () => {
+      const isHidden = mobileMenu.classList.toggle('hidden');
+      mobileMenuBtn.setAttribute('aria-expanded', String(!isHidden));
+      if (mobileMenuIcon) {
+        mobileMenuIcon.className = isHidden ? 'fa-solid fa-bars text-xl' : 'fa-solid fa-xmark text-xl text-amber-300';
+      }
+    });
+
+    mobileMenu.querySelectorAll('.mobile-nav-link').forEach(link => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        const href = link.getAttribute('href');
+        const targetId = href ? href.replace('#', '') : 'home';
+        mobileMenu.classList.add('hidden');
+        mobileMenuBtn.setAttribute('aria-expanded', 'false');
+        if (mobileMenuIcon) mobileMenuIcon.className = 'fa-solid fa-bars text-xl';
+        smoothScrollTo(targetId);
+        if (targetId === 'contact') {
+          setTimeout(() => {
+            const nameInput = document.getElementById('contact-name');
+            if (nameInput) nameInput.focus();
+          }, 500);
+        }
+      });
+    });
+  }
+
+  // 3. Typewriter Headlines
+  const nameEl = document.getElementById('hero-name');
+  const roleEl = document.getElementById('hero-role');
+  
+  const namePhrases = ["Jason Berdisola", "Web Developer", "BSIT Graduate", "Creative Coder"];
+  const rolePhrases = ["Frontend & Backend", "Aspiring Full Stack", "UI/UX & Web Dev", "Creative Coder"];
+
+  function runTypewriter(element, phrases, wait = 2600) {
+    let loopNum = 0;
+    let isDeleting = false;
+    let txt = '';
+    
+    function tick() {
+      const i = loopNum % phrases.length;
+      const fullTxt = phrases[i];
+
+      if (isDeleting) {
+        txt = fullTxt.substring(0, txt.length - 1);
+      } else {
+        txt = fullTxt.substring(0, txt.length + 1);
+      }
+
+      element.textContent = txt;
+
+      let delta = isDeleting ? 40 : 80;
+
+      if (!isDeleting && txt === fullTxt) {
+        delta = wait;
+        isDeleting = true;
+      } else if (isDeleting && txt === '') {
+        isDeleting = false;
+        loopNum++;
+        delta = 350;
+      }
+
+      setTimeout(tick, delta);
+    }
+
+    tick();
+  }
+
+  const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (nameEl && !prefersReducedMotion) runTypewriter(nameEl, namePhrases, 2800);
+  if (roleEl && !prefersReducedMotion) {
+    setTimeout(() => {
+      runTypewriter(roleEl, rolePhrases, 3000);
+    }, 600);
+  }
+
+  // 4. ScrollSpy & Floating Back To Top
+  const navItems = document.querySelectorAll('.nav-item');
+  const sectionIds = ['home', 'about', 'skills', 'experience', 'education', 'projects', 'contact'];
+  const sectionElements = sectionIds.map(id => document.getElementById(id)).filter(Boolean);
+  const floatingTopBtn = document.getElementById('floating-back-to-top');
+  const footerBackToTop = document.getElementById('back-to-top-btn');
+
+  window.addEventListener('scroll', () => {
+    if (floatingTopBtn) {
+      if (window.scrollY > 400) {
+        floatingTopBtn.classList.remove('opacity-0', 'pointer-events-none');
+        floatingTopBtn.classList.add('opacity-100');
+      } else {
+        floatingTopBtn.classList.remove('opacity-100');
+        floatingTopBtn.classList.add('opacity-0', 'pointer-events-none');
+      }
+    }
+  });
+
+  const scrollToTopAction = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    showToast('Returned to top', 'fa-solid fa-arrow-up text-amber-300');
+  };
+
+  if (floatingTopBtn) floatingTopBtn.addEventListener('click', scrollToTopAction);
+  if (footerBackToTop) footerBackToTop.addEventListener('click', scrollToTopAction);
+
+  const heroScrollDown = document.getElementById('hero-scroll-down-btn');
+  if (heroScrollDown) {
+    heroScrollDown.addEventListener('click', (e) => {
+      e.preventDefault();
+      smoothScrollTo('about');
+    });
+  }
+
+  const heroViewWork = document.getElementById('hero-view-work-btn');
+  if (heroViewWork) {
+    heroViewWork.addEventListener('click', (e) => {
+      e.preventDefault();
+      smoothScrollTo('projects');
+    });
+  }
+
+  const observerOptions = {
+    root: null,
+    rootMargin: '-20% 0px -55% 0px',
+    threshold: 0
+  };
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const currentId = entry.target.getAttribute('id');
+        navItems.forEach(item => {
+          const target = item.getAttribute('data-target');
+          const indicator = item.querySelector('.nav-indicator');
+          if (target === currentId) {
+            item.classList.remove('text-gray-400');
+            item.classList.add('text-white');
+            if (indicator) indicator.style.opacity = '1';
+          } else {
+            item.classList.remove('text-white');
+            item.classList.add('text-gray-400');
+            if (indicator) indicator.style.opacity = '0';
+          }
+        });
+      }
+    });
+  }, observerOptions);
+
+  sectionElements.forEach(sec => observer.observe(sec));
+
+  // 5. Hero Actions & Modals
+  const avatarTrigger = document.getElementById('hero-avatar-trigger');
+  const profileModal = document.getElementById('profile-modal');
+  const closeProfileModal = document.getElementById('close-profile-modal');
+  const modalContactLink = document.getElementById('modal-contact-link');
+  const modalGithubShortcut = document.getElementById('modal-github-shortcut');
+
+  function openProfileModal() {
+    if (!profileModal) return;
+    profileModal.classList.remove('opacity-0', 'pointer-events-none');
+    profileModal.classList.add('opacity-100');
+    const content = document.getElementById('profile-modal-content');
+    if (content) {
+      content.classList.remove('scale-95');
+      content.classList.add('scale-100');
+    }
+  }
+
+  function hideProfileModal() {
+    if (!profileModal) return;
+    profileModal.classList.remove('opacity-100');
+    profileModal.classList.add('opacity-0', 'pointer-events-none');
+    const content = document.getElementById('profile-modal-content');
+    if (content) {
+      content.classList.remove('scale-100');
+      content.classList.add('scale-95');
+    }
+  }
+
+  if (avatarTrigger) {
+    avatarTrigger.addEventListener('click', openProfileModal);
+    avatarTrigger.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        openProfileModal();
+      }
+    });
+  }
+
+  if (modalContactLink) {
+    modalContactLink.addEventListener('click', () => {
+      hideProfileModal();
+      smoothScrollTo('contact');
+      setTimeout(() => {
+        const nameInput = document.getElementById('contact-name');
+        if (nameInput) nameInput.focus();
+      }, 500);
+    });
+  }
+
+  if (modalGithubShortcut) {
+    modalGithubShortcut.addEventListener('click', () => {
+      hideProfileModal();
+    });
+  }
+
+  const bsitBadgeBtn = document.getElementById('bsit-badge-btn');
+  if (bsitBadgeBtn) {
+    bsitBadgeBtn.addEventListener('click', () => {
+      showToast('BSIT Graduate: Bachelor of Science in Information Technology', 'fa-solid fa-graduation-cap text-amber-300');
+    });
+  }
+
+  const statusPillBtn = document.getElementById('status-pill-btn');
+  if (statusPillBtn) {
+    statusPillBtn.addEventListener('click', () => {
+      showToast('Jason is currently open to full-time junior web developer and intern opportunities!', 'fa-solid fa-circle-check text-emerald-400');
+    });
+  }
+
+  if (closeProfileModal) closeProfileModal.addEventListener('click', hideProfileModal);
+  if (profileModal) {
+    profileModal.addEventListener('click', (e) => {
+      if (e.target === profileModal) hideProfileModal();
+    });
+  }
+
+  // 6. Generic Spec / Metric / Skill Modal
+  const specModal = document.getElementById('spec-modal');
+  const closeSpecModal = document.getElementById('close-spec-modal');
+  const specModalAction = document.getElementById('spec-modal-action');
+  const specModalIcon = document.getElementById('spec-modal-icon');
+  const specModalTitle = document.getElementById('spec-modal-title');
+  const specModalSubtitle = document.getElementById('spec-modal-subtitle');
+  const specModalBody = document.getElementById('spec-modal-body');
+  const specModalExtra = document.getElementById('spec-modal-extra');
+  const specModalExample = document.getElementById('spec-modal-example');
+
+  function openSpecModal(title, subtitle, body, iconClass = 'fa-solid fa-chart-line', extraExample = '') {
+    if (!specModal) return;
+    specModalTitle.textContent = title;
+    specModalSubtitle.textContent = subtitle;
+    specModalBody.textContent = body;
+    specModalIcon.innerHTML = `<i class="${iconClass}"></i>`;
+    
+    if (extraExample) {
+      specModalExtra.classList.remove('hidden');
+      specModalExample.textContent = extraExample;
+    } else {
+      specModalExtra.classList.add('hidden');
+    }
+
+    specModal.classList.remove('opacity-0', 'pointer-events-none');
+    specModal.classList.add('opacity-100');
+    const content = document.getElementById('spec-modal-content');
+    if (content) {
+      content.classList.remove('scale-95');
+      content.classList.add('scale-100');
+    }
+  }
+
+  function hideSpecModal() {
+    if (!specModal) return;
+    specModal.classList.remove('opacity-100');
+    specModal.classList.add('opacity-0', 'pointer-events-none');
+    const content = document.getElementById('spec-modal-content');
+    if (content) {
+      content.classList.remove('scale-100');
+      content.classList.add('scale-95');
+    }
+  }
+
+  if (closeSpecModal) closeSpecModal.addEventListener('click', hideSpecModal);
+  if (specModalAction) specModalAction.addEventListener('click', hideSpecModal);
+  if (specModal) {
+    specModal.addEventListener('click', (e) => {
+      if (e.target === specModal) hideSpecModal();
+    });
+  }
+
+  // Metric Cards
+  document.querySelectorAll('.metric-card').forEach(card => {
+    card.addEventListener('click', () => {
+      const title = card.getAttribute('data-metric-title');
+      const desc = card.getAttribute('data-metric-desc');
+      const badge = card.getAttribute('data-metric-badge') || 'Milestone Metric';
+      const icon = card.getAttribute('data-metric-icon') || 'fa-solid fa-award';
+      openSpecModal(title, `Category: ${badge}`, desc, icon);
+    });
+  });
+
+  // About Philosophy Tags
+  document.querySelectorAll('.about-tag').forEach(tag => {
+    tag.addEventListener('click', () => {
+      const info = tag.getAttribute('data-info');
+      tag.classList.add('border-amber-400', 'text-amber-300', 'bg-amber-400/10');
+      setTimeout(() => {
+        tag.classList.remove('border-amber-400', 'text-amber-300', 'bg-amber-400/10');
+      }, 1400);
+      showToast(info, 'fa-solid fa-lightbulb text-amber-300');
+    });
+  });
+
+  // 7. Skills Tab Filter & Card Modals
+  const filterButtons = document.querySelectorAll('.skill-tab');
+  const skillCards = document.querySelectorAll('.skill-card');
+
+  filterButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      filterButtons.forEach(b => {
+        b.classList.remove('bg-white', 'text-black', 'border-white', 'active');
+        b.classList.add('text-gray-300', 'border-white/20');
+      });
+
+      btn.classList.add('bg-white', 'text-black', 'border-white', 'active');
+      btn.classList.remove('text-gray-300', 'border-white/20');
+
+      const category = btn.getAttribute('data-filter');
+
+      skillCards.forEach(card => {
+        const cardCat = card.getAttribute('data-category');
+        if (category === 'all' || cardCat === category) {
+          card.style.display = 'block';
+          setTimeout(() => {
+            card.style.opacity = '1';
+            card.style.transform = 'scale(1)';
+          }, 10);
+        } else {
+          card.style.opacity = '0';
+          card.style.transform = 'scale(0.95)';
+          setTimeout(() => {
+            card.style.display = 'none';
+          }, 150);
+        }
+      });
+      showToast(`Showing ${category === 'all' ? 'all' : category} technologies`, 'fa-solid fa-filter text-amber-300');
+    });
+  });
+
+  skillCards.forEach(card => {
+    card.addEventListener('click', () => {
+      const name = card.getAttribute('data-name');
+      const level = card.getAttribute('data-level');
+      const years = card.getAttribute('data-years');
+      const useCase = card.getAttribute('data-use');
+      const frameworks = card.getAttribute('data-frameworks') || '';
+      const example = card.getAttribute('data-example') || '';
+      const icon = card.querySelector('i')?.className || 'fa-solid fa-code';
+      const detailInfo = `${useCase} | Ecosystem: ${frameworks}`;
+      openSpecModal(name, `Proficiency: ${level} • Experience: ${years}`, detailInfo, icon, example);
+    });
+  });
+
+  // 8. Expand / Collapse Timeline Cards
+  document.querySelectorAll('.timeline-card').forEach(card => {
+    const toggleDetails = () => {
+      const details = card.querySelector('.timeline-expanded');
+      const hint = card.querySelector('.toggle-hint');
+      if (details) {
+        const isHidden = details.classList.toggle('hidden');
+        card.setAttribute('aria-expanded', String(!isHidden));
+        if (hint) {
+          hint.innerHTML = isHidden 
+            ? '<i class="fa-solid fa-chevron-down text-[10px]"></i> <span>Expand</span>' 
+            : '<i class="fa-solid fa-chevron-up text-[10px]"></i> <span>Collapse</span>';
+        }
+        showToast(isHidden ? 'Timeline card collapsed' : 'Timeline details expanded', 'fa-solid fa-folder-open text-amber-300');
+      }
+    };
+    card.addEventListener('click', toggleDetails);
+    card.addEventListener('keydown', (e) => {
+      if (e.target === card && (e.key === 'Enter' || e.key === ' ')) {
+        e.preventDefault();
+        toggleDetails();
+      }
+    });
+  });
+
+  // 9. Project Case Study Modal Data & Interactive Handlers
+  const projectData = {
+    1: {
+      badge: "Full Stack",
+      title: "ToothSaver - Dental Clinic Management",
+      desc: "A web-based dental clinic management system designed to organize patient records, manage appointments, and streamline daily clinic operations through a user-friendly and efficient platform.",
+      previewHeading: "ToothSaver source code",
+      previewText: "Open the ToothSaver GitHub repository to explore its source code and project details.",
+      features: [
+        "Digital patient intake and medical history tracking with encrypted storage.",
+        "Interactive appointment calendar with automated conflict prevention.",
+        "Custom billing system creating printable itemized treatment receipts.",
+        "Tailwind CSS responsive design optimized for front-desk desktop and tablet views."
+      ],
+      tags: ["React", "Tailwind CSS", "REST API", "MySQL", "PHP"],
+      repo: "https://github.com/jasonberdisola/ToothSaver"
+    },
+    3: {
+      badge: "Portfolio",
+      title: "Jason Berdisola Minimalist Portfolio",
+      desc: "Interactive developer showcase featuring circular HUD tech aura, typewriter engine, scroll-spy navigation, and zero-dependency vanilla JS interactivity.",
+      previewHeading: "Portfolio source code",
+      previewText: "Open the portfolio GitHub repository to explore its source code and implementation.",
+      features: [
+        "Custom lightweight typewriter script with alternating role headlines.",
+        "Precision IntersectionObserver scroll-spy with illuminated active markers.",
+        "Dynamic skill category switcher with instant DOM transitions.",
+        "Fully accessible dark UI optimized for high-contrast readability."
+      ],
+      tags: ["HTML5", "Tailwind CSS", "JavaScript", "HUD UI", "IntersectionObserver"],
+      repo: "https://github.com/jasonberdisola/jason-portfolio"
+    }
+  };
+
+  const projectModal = document.getElementById('project-modal');
+  const closeProjectModal = document.getElementById('close-project-modal');
+  const modalBadge = document.getElementById('modal-project-badge');
+  const modalTitle = document.getElementById('modal-project-title');
+  const modalDesc = document.getElementById('modal-project-desc');
+  const modalFeatures = document.getElementById('modal-project-features');
+  const modalTags = document.getElementById('modal-project-tags');
+  const modalRepoBtn = document.getElementById('modal-project-repo-btn');
+  const modalLiveBtn = document.getElementById('modal-project-live-btn');
+  const modalPreviewBox = document.getElementById('modal-project-preview-text');
+  const modalPreviewHeading = document.getElementById('modal-preview-heading');
+  let currentActiveRepo = "https://github.com/jasonberdisola";
+
+  function openProjectModal(id) {
+    const data = projectData[id] || projectData[1];
+    if (!projectModal) return;
+
+    currentActiveRepo = data.repo;
+    modalBadge.textContent = data.badge;
+    modalTitle.textContent = data.title;
+    modalDesc.textContent = data.desc;
+    if (modalPreviewHeading) modalPreviewHeading.textContent = data.previewHeading;
+    if (modalPreviewBox) modalPreviewBox.textContent = data.previewText;
+    modalFeatures.innerHTML = data.features.map(f => `<li>${f}</li>`).join('');
+    modalTags.innerHTML = data.tags.map(t => `<span class="text-xs font-mono text-gray-300 bg-white/10 px-2.5 py-1 rounded">${t}</span>`).join('');
+
+    projectModal.classList.remove('opacity-0', 'pointer-events-none');
+    projectModal.classList.add('opacity-100');
+    const content = document.getElementById('project-modal-content');
+    if (content) {
+      content.classList.remove('scale-95');
+      content.classList.add('scale-100');
+    }
+  }
+
+  function hideProjectModal() {
+    if (!projectModal) return;
+    projectModal.classList.remove('opacity-100');
+    projectModal.classList.add('opacity-0', 'pointer-events-none');
+    const content = document.getElementById('project-modal-content');
+    if (content) {
+      content.classList.remove('scale-100');
+      content.classList.add('scale-95');
+    }
+  }
+
+  if (closeProjectModal) closeProjectModal.addEventListener('click', hideProjectModal);
+  if (projectModal) {
+    projectModal.addEventListener('click', (e) => {
+      if (e.target === projectModal) hideProjectModal();
+    });
+  }
+
+  if (modalLiveBtn) {
+    modalLiveBtn.addEventListener('click', () => {
+      window.open(currentActiveRepo, '_blank', 'noopener,noreferrer');
+    });
+  }
+
+  if (modalRepoBtn) {
+    modalRepoBtn.addEventListener('click', () => {
+      navigator.clipboard.writeText(currentActiveRepo).then(() => {
+        showToast(`🔗 GitHub Repo link copied: ${currentActiveRepo}`, 'fa-brands fa-github text-amber-300');
+      }).catch(() => {
+        showToast(`Repo link: ${currentActiveRepo}`, 'fa-brands fa-github text-amber-300');
+      });
+    });
+  }
+
+  document.querySelectorAll('.btn-live-preview').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const pId = btn.getAttribute('data-project-id');
+      openProjectModal(pId);
+    });
+  });
+
+  document.querySelectorAll('.project-card-interactive').forEach(card => {
+    card.addEventListener('click', (e) => {
+      if (e.target.closest('button') || e.target.closest('a')) return;
+      const pId = card.getAttribute('data-project-id');
+      openProjectModal(pId);
+    });
+    card.addEventListener('keydown', (e) => {
+      if (e.target === card && (e.key === 'Enter' || e.key === ' ')) {
+        e.preventDefault();
+        openProjectModal(card.getAttribute('data-project-id'));
+      }
+    });
+  });
+
+  document.querySelectorAll('.btn-code-view').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const repo = btn.getAttribute('data-repo') || 'portfolio';
+      const repoUrl = `https://github.com/jasonberdisola/${repo}`;
+      window.open(repoUrl, '_blank', 'noopener,noreferrer');
+    });
+  });
+
+  const exploreGithubLink = document.getElementById('explore-github-link');
+  if (exploreGithubLink) {
+    exploreGithubLink.addEventListener('click', () => {
+      window.open('https://github.com/jasonberdisola', '_blank', 'noopener,noreferrer');
+    });
+  }
+
+  // 10. Contact Section Details & Copy
+  function copyEmailAction() {
+    const email = 'berdisolajason6@gmail.com';
+    navigator.clipboard.writeText(email).then(() => {
+      const copyTextSpan = document.getElementById('copy-text');
+      if (copyTextSpan) copyTextSpan.textContent = 'Copied to clipboard!';
+      showToast(`📋 Email ${email} copied to clipboard!`, 'fa-solid fa-clipboard-check text-emerald-400');
+      setTimeout(() => {
+        if (copyTextSpan) copyTextSpan.textContent = 'Click to copy email address';
+      }, 3000);
+    }).catch(() => {
+      showToast(`Email: ${email}`, 'fa-regular fa-envelope text-white');
+    });
+  }
+
+  const copyEmailBtn = document.getElementById('copy-email-btn');
+  const contactEmailCard = document.getElementById('contact-email-card');
+  if (copyEmailBtn) {
+    copyEmailBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      copyEmailAction();
+    });
+  }
+  if (contactEmailCard) contactEmailCard.addEventListener('click', copyEmailAction);
+
+  const locationCard = document.getElementById('contact-location-card');
+  if (locationCard) {
+    const showLocation = () => {
+      showToast('📍 Based in the Philippines, available worldwide for remote & on-site work', 'fa-solid fa-location-dot text-emerald-400');
+    };
+    locationCard.addEventListener('click', showLocation);
+    locationCard.addEventListener('keydown', (e) => {
+      if (e.target === locationCard && (e.key === 'Enter' || e.key === ' ')) {
+        e.preventDefault();
+        showLocation();
+      }
+    });
+  }
+
+  // 11. Contact Form Submitting with Modal Confirmation
+  const contactForm = document.getElementById('contact-form');
+  const contactModal = document.getElementById('contact-modal');
+  const closeContactModal = document.getElementById('close-contact-modal');
+  const contactModalDoneBtn = document.getElementById('contact-modal-done-btn');
+  const modalConfirmName = document.getElementById('modal-confirm-name');
+  const modalConfirmEmail = document.getElementById('modal-confirm-email');
+  const modalConfirmSubject = document.getElementById('modal-confirm-subject');
+
+  function hideContactModal() {
+    if (!contactModal) return;
+    contactModal.classList.remove('opacity-100');
+    contactModal.classList.add('opacity-0', 'pointer-events-none');
+    const content = document.getElementById('contact-modal-content');
+    if (content) {
+      content.classList.remove('scale-100');
+      content.classList.add('scale-95');
+    }
+  }
+
+  if (closeContactModal) closeContactModal.addEventListener('click', hideContactModal);
+  if (contactModalDoneBtn) contactModalDoneBtn.addEventListener('click', hideContactModal);
+  if (contactModal) {
+    contactModal.addEventListener('click', (e) => {
+      if (e.target === contactModal) hideContactModal();
+    });
+  }
+
+  if (contactForm) {
+    contactForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      
+      const nameInput = document.getElementById('contact-name');
+      const emailInput = document.getElementById('contact-email');
+      const subjectInput = document.getElementById('contact-subject');
+      const messageInput = document.getElementById('contact-message');
+
+      if (!nameInput.value.trim()) {
+        showToast('Please enter your name.', 'fa-solid fa-triangle-exclamation text-amber-400');
+        nameInput.focus();
+        return;
+      }
+
+      if (!emailInput.value.trim()) {
+        showToast('Please enter your email address.', 'fa-solid fa-triangle-exclamation text-amber-400');
+        emailInput.focus();
+        return;
+      }
+
+      if (!emailInput.validity.valid) {
+        showToast('Please enter a valid email address (e.g. name@domain.com).', 'fa-solid fa-triangle-exclamation text-amber-400');
+        emailInput.focus();
+        return;
+      }
+
+      if (!subjectInput.value.trim()) {
+        showToast('Please provide a subject for your message.', 'fa-solid fa-triangle-exclamation text-amber-400');
+        subjectInput.focus();
+        return;
+      }
+
+      if (!messageInput.value.trim()) {
+        showToast('Please provide a brief message.', 'fa-solid fa-triangle-exclamation text-amber-400');
+        messageInput.focus();
+        return;
+      }
+
+      const submittedName = nameInput.value.trim();
+      const submittedEmail = emailInput.value.trim();
+      const submittedSubject = subjectInput.value.trim();
+      const message = messageInput.value.trim();
+      const body = `Name: ${submittedName}\nEmail: ${submittedEmail}\n\n${message}`;
+      const mailtoUrl = `mailto:berdisolajason6@gmail.com?subject=${encodeURIComponent(submittedSubject)}&body=${encodeURIComponent(body)}`;
+
+      if (modalConfirmName) modalConfirmName.textContent = submittedName;
+      if (modalConfirmEmail) modalConfirmEmail.textContent = submittedEmail;
+      if (modalConfirmSubject) modalConfirmSubject.textContent = submittedSubject;
+
+      window.location.href = mailtoUrl;
+      if (contactModal) {
+        contactModal.classList.remove('opacity-0', 'pointer-events-none');
+        contactModal.classList.add('opacity-100');
+        const content = document.getElementById('contact-modal-content');
+        if (content) {
+          content.classList.remove('scale-95');
+          content.classList.add('scale-100');
+        }
+      }
+      showToast('Email draft opened. Send it from your email app to finish.', 'fa-solid fa-paper-plane text-emerald-400');
+    });
+  }
+
+  // Escape key closes all open modals
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      if (mobileMenu && !mobileMenu.classList.contains('hidden')) {
+        mobileMenu.classList.add('hidden');
+        mobileMenuBtn.setAttribute('aria-expanded', 'false');
+        if (mobileMenuIcon) mobileMenuIcon.className = 'fa-solid fa-bars text-xl';
+      }
+      hideProfileModal();
+      hideProjectModal();
+      hideSpecModal();
+      hideContactModal();
+    }
+  });
+});
+</script>
+<!-- END: Interactive JavaScript -->
+</body></html>

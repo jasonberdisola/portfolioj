@@ -1,0 +1,13 @@
+{
+  "name": "jason-berdisola-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "npx @tailwindcss/cli -i ./src/input.css -o ./styles.css --minify && node ./scripts/build.js",
+    "dev": "npx @tailwindcss/cli -i ./src/input.css -o ./styles.css --watch"
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "4.3.0",
+    "tailwindcss": "4.3.0"
+  }
+}
